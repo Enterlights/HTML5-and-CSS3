@@ -366,7 +366,7 @@
                         </div>
                     </div>
                 </div>
-                <button>SHOW MORE</button>
+                <button class="show_more">SHOW MORE</button>
             </section>
             <section class="reviews">
                 <h2>
@@ -530,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-                <button>SHOW MORE</button>
+                <button class="show_more">SHOW MORE</button>
             </section>
             <section class="buy_it_now">
                 <h2>
@@ -883,7 +883,7 @@
 
     <script>
         $('.bottom').hide();
-        $('button').on('click', function () {
+        $('.show_more').on('click', function () {
             var linkText = $('.bottom').is(':visible') ? 'SHOW MORE' : 'HIDE';
             $(this).text(linkText);
             $('.bottom').slideToggle(1000);
