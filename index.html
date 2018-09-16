@@ -283,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row bottom">
+                    <div class="row bottom_screenshots">
                         <div class="col-lg-6 col-md-12">
                             <div class="product_screenshots_container">
                                 <div class="product_screenshot">
@@ -366,7 +366,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="show_more">SHOW MORE</button>
+                <button class="show_more_screenshots">SHOW MORE</button>
             </section>
             <section class="reviews">
                 <h2>
@@ -451,7 +451,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row bottom">
+                    <div class="row bottom_reviews">
                         <div class="col-lg-6 col-md-12 col-xs-12">
                             <div class="product_reviews_container">
                                 <div class="reviews_image">
@@ -530,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="show_more">SHOW MORE</button>
+                <button class="show_more_reviews">SHOW MORE</button>
             </section>
             <section class="buy_it_now">
                 <h2>
@@ -883,11 +883,19 @@
     <script src="dimsemenov-Magnific-Popup-2ff1692/dist/jquery.magnific-popup.min.js"></script>
 
     <script>
-        $('.bottom').hide();
-        $('.show_more').on('click', function () {
-            var linkText = $('.bottom').is(':visible') ? 'SHOW MORE' : 'HIDE';
+        $('.bottom_screenshots').hide();
+        $('.show_more_screenshots').on('click', function () {
+            var linkText = $('.bottom_screenshots').is(':visible') ? 'SHOW MORE' : 'HIDE';
             $(this).text(linkText);
-            $('.bottom').slideToggle(1000);
+            $('.bottom_screenshots').slideToggle(1000);
+        });
+    </script>
+    <script>
+        $('.bottom_reviews').hide();
+        $('.show_more_reviews').on('click', function () {
+            var linkText = $('.bottom_reviews').is(':visible') ? 'SHOW MORE' : 'HIDE';
+            $(this).text(linkText);
+            $('.bottom_reviews').slideToggle(1000);
         });
     </script>
     <script>
