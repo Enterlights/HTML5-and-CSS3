@@ -1,0 +1,62 @@
+@mixin respondTo($_media) {
+    @if $_media==phones {
+        @media all and (max-width: 479px) {
+            @content;
+        }
+    }
+    @else if $_media==wide-phones {
+        @media all and (min-width: 480px) and (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $_media==tablets {
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @else if $_media==small-desktops {
+        @media all and (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $_media==lg-desktops {
+        @media all and (min-width: 1200px) and (max-width: 1440px) {
+            @content;
+        }
+    }
+    @else if $_media==xlg-desktops {
+        @media all and (min-width: 1441px) and (max-width: 2560px) {
+            @content;
+        }
+    }
+}
+
+@mixin customRespond($_minWidth, $_maxWidth) {
+    @media all and (min-width: $_minWidth) and (max-width: $_maxWidth) {
+        @content;
+    }
+}
+
+@mixin buttonDownStyles {
+    color: #fff;
+    display: block;
+    width: 150px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background: #00aeed;
+    border-radius: 15px;
+    font-family: $LatoRegular;
+    letter-spacing: 0.4px;
+    transition-duration: 1s;
+    text-decoration: none;
+    animation: glowing 1500ms infinite;
+}
+
+@mixin paragraphStyle {
+    font-family: $LatoRegular;
+    font-size: 17px;
+    line-height: 1.76;
+    letter-spacing: 0.4px;
+    text-align: justify;
+}
