@@ -1,0 +1,59 @@
+@keyframes logoAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: 30%;
+    }
+}
+
+@keyframes logoAnimation2 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 20%;
+    }
+}
+
+@keyframes logoAnimation3 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 70%;
+    }
+}
+
+@keyframes logoAnimation4 {
+    from {
+        left: 10%;
+    }
+    to {
+        left: 60%;
+    }
+}
+
+@keyframes logoAnimation5 {
+    from {
+        left: 10%;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes logoAnimation6 {
+    from {
+        left: 10%;
+    }
+    to {
+        left: 30%;
+    }
+}
+
+@keyframes glowing { 
+    0% { background-color: #054775; box-shadow: 0 0 2px #074673; } 
+    50% { background-color: #1082d4; box-shadow: 0 0 9px #0e87de; } 
+    100% { background-color: #074b7b; box-shadow: 0 0 2px #094d7d; } 
+  }

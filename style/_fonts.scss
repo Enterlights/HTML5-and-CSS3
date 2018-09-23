@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('../fonts/LatoRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('../fonts/LatoBold.ttf');
+}
+
+@font-face {
+    font-family: 'Lato Black';
+    src: url('../fonts/LatoBlack.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/MontserratRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/MontserratBold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('../fonts/MontserratBlack.ttf');
+}
+
+@font-face {
+    font-family: 'LeckerliOne';
+    src: url('../fonts/LeckerliOne.ttf');
+}
+
+$LatoRegular: 'Lato Regular', sans-serif;
+$LatoBold: 'Lato Bold', sans-serif;
+$LatoBlack: 'Lato Black', sans-serif;
+$MontserratRegular: 'Montserrat Regular', sans-serif;
+$MontserratBold: 'Montserrat Bold', sans-serif;
+$MontserratBlack: 'Montserrat Black', sans-serif;
+$LeckerliOne: 'LeckerliOne', sans-serif;
