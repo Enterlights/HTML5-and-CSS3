@@ -1,0 +1,30 @@
+section.b-realization
+    .container
+        .row
+            .b-service.b-service_position
+                mixin b-service__unit(src, alt, header, description)
+                    figure.b-service__unit
+                        img(src=src, alt=alt).b-service__img
+                        figcaption.b-service__description.b-service__description_position
+                            span.b-service__descriptionHead= header
+                            p.b-service__descriptionText.b-service__descriptionText_position= description
+
+                - var descriptionVisible= "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim."
+                - var descriptionHidden= "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+
+                +b-service__unit("images/realization/ourService/design.png", "Web & App Design", "Web & App Design", descriptionVisible)
+                +b-service__unit("images/realization/ourService/development.png", "Development", "Development", descriptionVisible)
+                +b-service__unit("images/realization/ourService/customization.png", "Customization", "Customization", descriptionVisible)
+                +b-service__unit("images/realization/ourService/marketing.png", "Marketing", "Marketing", descriptionVisible)
+
+            .b-realizationHead.b-realizationHead_position
+                h2.b-realizationHead__header Waxom is Realization of your Ideas.
+                span.b-realizationHead__span.b-realizationHead__span_position.
+                    Investigationes demonstraverunt lectores
+                    legere me lius quod ii legunt saepius.
+                    Claritas est etiam processus dynamicus, qui sequitur mutationem
+                    consuetudium.
+            .b-ourWork
+                img(src="images/realization/exampleOfWork/browser-left.png", alt="mobile adaptive").b-ourWork__mobile
+                img(src="images/realization/exampleOfWork/browser-center.png", alt="slider example").b-ourWork__slider
+                img(src="images/realization/exampleOfWork/browser-right.png", alt="grid example").b-ourWork__photo

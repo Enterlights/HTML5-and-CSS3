@@ -1,0 +1,22 @@
+.b-projects {
+    &__header {
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 600;
+        color: #555555;
+        width: 100%;
+        text-align: center;
+        &_position {
+            margin-top: 81px;
+            margin-bottom: 24px;
+        }
+    }
+    &__description {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        text-align: center;
+        color: #8c8c8c;
+    }
+}

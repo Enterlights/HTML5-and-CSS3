@@ -1,0 +1,33 @@
+.b-ourWork {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    &__mobile {
+        grid-column-start: 1;
+        align-self: flex-end;
+        transition: 2s;
+        width: 600%;
+        &:hover {
+            z-index: 3;
+            transform: scale(1.1,1);
+        }
+    }
+    &__slider {
+        grid-column-start: 3;
+        z-index: 2;
+        transition: 2s;
+        width: 600%;
+        &:hover {
+            transform: scale(1.1,1);
+        }
+    }
+    &__photo {
+        grid-column-start: 5;
+        align-self: flex-end;
+        transition: 2s;
+        width: 600%;
+        &:hover {
+            z-index: 3;
+            transform: scale(1.1,1);
+        }
+    }
+}

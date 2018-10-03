@@ -1,0 +1,17 @@
+.b-simpleAbout
+    .container
+        .row.b-simpleAbout_flex
+            mixin b-simpleAbout__unit(src, alt, span, p)
+                figure.b-simpleAbout__unit.b-simpleAbout__unit_position
+                    img(src=src, alt=alt).b-simpleAbout__unit-image
+                    figcaption.b-simpleAbout__unit-inside
+                        span.b-simpleAbout__unit-numberOf.b-simpleAbout__unit-numberOf_position=span
+                        p.b-simpleAbout__unit-description=p
+                        .b-simpleAbout__unit-underline.b-simpleAbout__unit-underline_position=underline
+
+            +b-simpleAbout__unit("images/simpleAbout/clients.png", "clients", "3587", "Satisfied Clients")
+            +b-simpleAbout__unit("images/simpleAbout/cups.png", "cups", "207", "Cups of coffee")
+            +b-simpleAbout__unit("images/simpleAbout/blogs.png", "blogs", "2500", "Blog posts")
+            +b-simpleAbout__unit("images/simpleAbout/likes.png", "likes", "873", "Likes")
+            +b-simpleAbout__unit("images/simpleAbout/launch.png", "likes", "900", "We launched")
+

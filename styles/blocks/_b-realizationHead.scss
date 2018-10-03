@@ -1,0 +1,28 @@
+.b-realizationHead {
+    width: 100%;
+    &__header {
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 600;
+        color: #555555;
+        text-align: center;
+    }
+    &__span {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        color: #8c8c8c;
+        display: block;
+        text-align: center;
+        &_position {
+            margin-top: 24px;
+            margin-bottom: 40px;
+            padding: 0 260px;
+        }
+    }
+}
+
+.b-realizationHead_position {
+    margin-top: 83px;
+}

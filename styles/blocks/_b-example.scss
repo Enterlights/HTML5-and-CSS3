@@ -1,0 +1,88 @@
+.b-example {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__unit {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            color: #dae90d;
+            background: #362f2d;
+        }
+        &_position {
+            margin-bottom: 30px;
+        }
+    }
+    &__unitImg {
+        width: 100%;
+    }
+    &__icons {
+        position: absolute;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            opacity: 0.7;
+            background: #362f2d;
+            .b-example__icons_links {
+                visibility: visible;
+            }
+        }
+        &_links {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 15px;
+            transition-duration: 1s;
+            visibility: hidden;
+            &:hover {
+                color: #dfa660;
+                transform: scale(1.5, 1.5);
+            }
+        }
+    }
+    &__descriptionHead {
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        color: #cf964f;
+        &_position {
+            margin-top: 30px;
+            margin-bottom: 14px;
+        }
+    }
+    &__descriptionText {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.43;
+        text-align: center;
+        color: #8a8a8a;
+    }
+    &__button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__buttonUnit {
+        width: 170px;
+        height: 50px;
+        border-radius: 3px;
+        background-color: #998675;
+        box-shadow: inset 0px -3px 0 0 #736357;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.64;
+        color: #ffffff;
+        text-transform: uppercase;
+        &_position {
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.b-header {
+    height: 100vh;
+    position: relative;
+    .b-slider {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 100vh;
+                }
+            }
+        }
+    }
+}

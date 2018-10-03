@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Montserrat ExtraLight';
+    src: url('../fonts/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    src: url('../fonts/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('../fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway SemiBold';
+    src: url('../fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+$Montserrat-ExtraLight: 'Montserrat ExtraLight', sans-serif;
+$Montserrat-Light: 'Montserrat Light', sans-serif;
+$Montserrat-Regular: 'Montserrat Regular', sans-serif;
+$Raleway-Bold: 'Raleway Bold', sans-serif;
+$Raleway-ExtraBold: 'Raleway ExtraBold', sans-serif;
+$Raleway-Medium: 'Raleway Medium', sans-serif;
+$Raleway-SemiBold: 'Raleway SemiBold', sans-serif;
+$Roboto-Regular: 'Roboto Regular', sans-serif;

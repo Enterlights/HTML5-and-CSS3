@@ -1,0 +1,42 @@
+.b-worldPress {
+    background-image: linear-gradient(to right, #211b19, #4e3427);
+    &_flex {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__header {
+        font-family: Raleway;
+        font-size: 28px;
+        color: #c7b299;
+        &_position {
+            margin-top: 48px;
+        }
+        &_span {
+            color: #ffffff;
+        }
+        &_p {
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 300;
+            color: #615855;
+            &_position {
+                margin-top: 8px;
+                margin-bottom: 49px;
+            }
+        }
+    }
+    &__button {
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.64;
+        color: #ffffff;
+        width: 170px;
+        height: 50px;
+        border-radius: 3px;
+        background-color: #998675;
+        box-shadow: inset 0px -3px 0 0 #736357;
+    }
+}
