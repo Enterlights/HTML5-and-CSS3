@@ -1,0 +1,38 @@
+.b-onSlider {
+    position: absolute;
+    top: 0px;
+    color: #ffffff;
+    display: flex;
+    &__logotype {
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        letter-spacing: -1.4px;
+        &_header {
+            margin-top: 40px;
+            margin-left: 30px;
+            margin-right: 100px;
+        }
+    }
+    .b-siteNav {
+        &_header {
+            margin-top: 50px;
+        }
+        &__li {
+            font-family: $Montserrat-Light;
+            font-size: 14px;
+            color: #ffffff;
+            &_position {
+                margin-left: 10px;
+            }
+        }
+        &__link {
+            color: #ffffff;
+            transition-duration: 1.3s;
+            &:hover {
+                color: #c7b299;
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+}

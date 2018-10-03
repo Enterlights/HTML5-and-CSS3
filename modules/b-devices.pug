@@ -1,0 +1,30 @@
+section.b-devices
+    .container
+        .row
+            img(src="images/devices/i-phone-in-hand.png", alt="i-phone-in-hand").b-devices__image.b-devices__image_position.col-5
+            .b-devices__wrap.col-6
+                h2.b-devices__header.b-devices__header_position.
+                    Excellent for Mobile Devices.
+                p.b-devices__description.b-devices__description_position.
+                    Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                    Investigationes demonstraverunt lectores legere me 
+                    lius quod ii legunt saepius claritas. Eodem modo typi, 
+                    qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                .b-devices__wrap.b-devices__wrap_position
+                    mixin b-devices__details(summary)
+                        details.b-devices__details.b-devices__details_position
+                            summary.b-devices__summary=summary
+                            - for (var x = 0; x < 3; x++)
+                                p.b-devices__detailsDescription.b-devices__detailsDescription_position=summary
+
+                    +b-devices__details("Nam liber tempor cum soluta nobis eleifend option")
+                    +b-devices__details("Option congue nihil imperdiet doming id quod mazim placerat facer")
+                    +b-devices__details("Eodem modo typi, qui nunc nobis videntur parum futurum")
+                    +b-devices__details("Investigationes demonstraverunt lectores")
+
+
+
+
+
+

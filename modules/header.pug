@@ -1,0 +1,42 @@
+header.b-header
+    #carouselExampleIndicators.carousel.slide.b-slider(data-ride="carousel")
+        ol.carousel-indicators
+            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+            li(data-target='#carouselExampleIndicators' data-slide-to='1')
+            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+        .carousel-inner
+            .carousel-item.active
+                img.d-block.w-100(src='images/header/slider/1.png' alt='First slide')
+            .carousel-item
+                img.d-block.w-100(src='images/header/slider/2.jpg' alt='Second slide')
+            .carousel-item
+                img.d-block.w-100(src='images/header/slider/3.jpg' alt='Third slide')
+        a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+    .container
+        .row
+            .b-onSlider
+                figure.b-onSlider__logotype.b-onSlider__logotype_header
+                    img(src="images/header/logos.png", alt="logotype").logotype
+                    figcaption Waxom
+                nav.b-siteNav.b-siteNav_header.navbar.navbar-expand-lg.navbar-ligh
+                    .collapse.navbar-collapse#navbarSupportedContent
+                        -
+                            var list = ["Home", "About Us", "Portfolio",
+                                "Features", "Blog", "Pricing", "Shortcodes", "Contact"]
+                        each item in list
+                            ul.navbar-nav.mr-auto
+                                li.nav-item.active.b-siteNav__li.b-siteNav__li_position
+                                    a.nav-item.active.b-siteNav__link(href="#").nav-link=item
+                        ul.navbar-nav.mr-auto
+                            li.nav-item.active.b-siteNav__li_position
+                                a.nav-item.active.b-siteNav__link(href="#").nav-link
+                                    i.fas.fa-briefcase
+                        ul.navbar-nav.mr-auto
+                            li.nav-item.active.b-siteNav__li_position
+                                a.nav-item.active.b-siteNav__link(href="#").nav-link
+                                    i.fas.fa-search

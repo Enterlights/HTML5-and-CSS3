@@ -1,0 +1,34 @@
+section.b-projects
+    .container
+        .row
+            h2.b-projects__header.b-projects__header_position Our Latest Projects.
+            span.b-projects__description.col-6.offset-3.
+                Investigationes demonstraverunt lectores legere me lius quod
+                ii legunt saepius. Claritas est etiam processus dynamicus,
+                qui sequitur mutationem consuetudium.
+            .b-projectsFilter.b-projectsFilter_position.col-6.offset-3
+                -
+                    var list = ["All", "Web Design", "Mobile App","Illustration", "Photography"]
+                each item in list
+                    a(href="#").b-projectsFilter__filterLinks= item
+            .b-example
+                mixin b-example__unit(src, alt, header, description)
+                    .b-example__unit.b-example__unit_position
+                        img(src=src, alt=alt).b-example__unitImg
+                        .b-example__icons
+                            a(href="#").b-example__icons_links
+                                i.fas.fa-link
+                            a(href="#").b-example__icons_links
+                                i.fas.fa-search
+                        article.b-example__description
+                            h4.b-example__descriptionHead.b-example__descriptionHead_position= header
+                            p.b-example__descriptionText.b-example__descriptionText_position= description
+
+                +b-example__unit("images/projects/mobile.png","Mobile adaptiv", "Claritas Etiam Processus", "Photography, Nature")
+                +b-example__unit("images/projects/coast.png","Image Popup", "Quam Nutamus Farum", "Graphic Design, Mock-Up")
+                +b-example__unit("images/projects/book.png","Books reader", "Usus Legentis Videntur", "Photography, Holiday")
+                +b-example__unit("images/projects/waterfall.png","Free of fallen", "Claritas Etiam Processus", "Photography, Nature")
+                +b-example__unit("images/projects/magazine.png","Look at magazine", "Quam Nutamus Farum", "Photography, Graphic Design, Mock-Up")
+                +b-example__unit("images/projects/rock.png","Rock", "Usus Legentis Videntur", "Photography, Holiday")
+            .b-example__button
+                button.b-example__buttonUnit.b-example__buttonUnit_position Load more

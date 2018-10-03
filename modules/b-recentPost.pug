@@ -1,0 +1,27 @@
+section.b-recentPost
+    .container
+        .row.b-recentPost_flex
+            h2.b-recentPost__header.b-recentPost__header_position Recent Posts.
+            span.b-recentPost__description.b-recentPost__description_position.col-8.offset-2.
+                Investigationes demonstraverunt lectores 
+                legere me lius quod ii legunt saepius. 
+                Claritas est etiam processus dynamicus, 
+                qui sequitur mutationem consuetudium.
+            .b-recentPost__postsWrap
+                mixin b-recentPost__postUnit(src, alt, date, month, h4, p, a)
+                    article.b-recentPost__postUnit.b-recentPost__postUnit_position
+                        img(src=src, alt=alt).b-recentPost__postUnit-image
+                        .b-recentPost__postUnit-dateWrap.b-recentPost__postUnit-dateWrap_position
+                            .b-recentPost__postUnit-date=date
+                            .b-recentPost__postUnit-month=month
+                        h4.b-recentPost__postUnit-header.b-recentPost__postUnit-header_position=h4
+                        p.b-recentPost__postUnit-description.b-recentPost__postUnit-description_position=p
+                        a.b-recentPost__postUnit-link.b-recentPost__postUnit-link_position(href="#")=a
+
+                - var p = "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium."
+                - var h4 = "Lorem ipsum dolor sit amet"
+                - var a = "Read More"
+
+                +b-recentPost__postUnit("images/recentPost/foot.png", "foot", "30", "Sept.", h4 , p, a )
+                +b-recentPost__postUnit("images/recentPost/laptop.png", "laptop", "30", "Sept.", h4 , p, a )
+                +b-recentPost__postUnit("images/recentPost/ship.png", "ship", "30", "Sept.", h4 , p, a )
